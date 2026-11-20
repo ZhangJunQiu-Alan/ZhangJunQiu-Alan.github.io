@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhang Fan — Agents, Games &amp; Stories</title>
+  <meta name="description" content="Portfolio of Zhang Fan (Charles): AI agent engineering, game development and AI filmmaking.">
+  <meta name="theme-color" content="#eee9df">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f0e0d'/%3E%3Crect x='14' y='29' width='36' height='6' fill='%23ff4f1a'/%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="en" href="https://zhangjunqiu-alan.github.io/">
+  <link rel="alternate" hreflang="zh-CN" href="https://zhangjunqiu-alan.github.io/zh/">
+  <link rel="preload" href="assets/fonts/Archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){var r=matchMedia("(prefers-reduced-motion: reduce)").matches,c=document.documentElement.classList;c.add(!r&&innerWidth>=900&&innerHeight>=600?"split":"flow");if(!r)c.add("intro-on")})()</script>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-half intro-top"><div class="intro-face"><span class="mono-mark"><b>Z</b><i></i><b>F</b></span><span class="intro-count">000</span></div></div>
+    <div class="intro-half intro-bot"><div class="intro-face"><span class="mono-mark"><b>Z</b><i></i><b>F</b></span><span class="intro-count">000</span></div></div>
+  </div>
+
+  <header class="bar" id="bar" data-theme="paper">
+    <a class="bar-logo" href="#top" data-goto="0" aria-label="Back to top">Z<span>—</span>F</a>
+    <nav class="bar-nav" aria-label="Sections">
+      <a href="#about" data-goto="1">About</a>
+      <a href="#primoria" data-goto="2">Work</a>
+      <a href="#cv" data-goto="6">CV</a>
+      <a href="#contact" data-goto="7">Contact</a>
+      <a class="bar-lang" href="zh/" lang="zh-CN" hreflang="zh-CN">中文</a>
+    </nav>
+    <span class="bar-count" aria-hidden="true"><span id="count-now">01</span> / 08</span>
+  </header>
+
+  <main class="stage" id="stage">
+
+    <section class="panel" id="top" data-theme="paper" data-dwell="0.5" aria-label="Intro">
+      <div class="panel-inner hero">
+        <p class="hero-eyebrow mono">Zhang Fan (Charles) — Portfolio 2026</p>
+        <h1 class="hero-title" aria-label="Agents, games and stories">
+          <span class="hl"><span>Agents,</span></span>
+          <span class="hl hl-indent"><span>Games &amp;</span></span>
+          <span class="hl"><span>Stories</span><small class="hero-side mono">IT student at James Cook University, Singapore.<br>I build AI agents, make games,<br>and am making a short film with AI.</small></span>
+        </h1>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track"><span>Zhang Fan <em>—</em> Charles <em>—</em> <span class="zh">张凡</span> <em>—</em>&nbsp;</span><span>Zhang Fan <em>—</em> Charles <em>—</em> <span class="zh">张凡</span> <em>—</em>&nbsp;</span><span>Zhang Fan <em>—</em> Charles <em>—</em> <span class="zh">张凡</span> <em>—</em>&nbsp;</span></div>
+        </div>
+        <p class="scroll-hint mono" aria-hidden="true">Scroll <span>↓</span></p>
+      </div>
+    </section>
+
+    <section class="panel" id="about" data-theme="ink" data-dwell="0.7" aria-labelledby="about-title">
+      <div class="panel-inner about">
+        <p class="pre mono" id="about-title">(About)</p>
+        <p class="statement" data-lines>I build systems that make hard things feel playable — an AI tutor that turns a question into a lesson, and a roguelite where every drop rewrites your build.</p>
+        <div class="about-row">
+          <dl class="facts mono reveal">
+            <div><dt>Study</dt><dd>Bachelor of IT, James Cook University Singapore · GPA 6.17 / 7 · JCU Merit Scholarship</dd></div>
+            <div><dt>Tools</dt><dd>Python · TypeScript · React / Next.js · LangGraph · PostgreSQL · Godot</dd></div>
+            <div><dt>Next</dt><dd>Open to a 4+ month full-time internship from mid–late January 2027 — AI applications, agent engineering, full-stack &amp; backend</dd></div>
+          </dl>
+          <a class="magnet round ember-btn" href="#primoria" data-goto="2"><span class="magnet-in">See the work ↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="primoria" data-theme="sage" data-dwell="1.1" aria-labelledby="pri-title">
+      <div class="panel-inner project">
+        <div class="project-copy">
+          <p class="pre mono"><span>01 / 03</span> AI learning platform — Capstone — 2026</p>
+          <h2 class="project-title" id="pri-title"><span class="hl"><span>Primoria</span></span></h2>
+          <p class="badge mono reveal">★ HackaStone 2026 Grand Finalist · Amsterdam</p>
+          <p class="lead" data-lines>Say what you want to learn and Primoria lays the path. In our team capstone I designed the AI tutor's architecture and built its core runtime.</p>
+          <ol class="points reveal">
+            <li>A LangGraph tutor routes intent to tools; long course generation runs as background jobs, with run state kept in PostgreSQL.</li>
+            <li>Hybrid retrieval over uploaded lectures — BM25 + pgvector — so answers quote the file and page.</li>
+            <li>The model fills validated parameters for 49 reusable teaching components instead of writing whole lessons.</li>
+          </ol>
+          <div class="project-foot reveal">
+            <p class="stack mono">TypeScript · Next.js · LangGraph · PostgreSQL · pgvector</p>
+            <a class="magnet pill" href="https://primoria.app/" target="_blank" rel="noopener"><span class="magnet-in">primoria.app ↗</span></a>
+          </div>
+        </div>
+        <div class="collage collage-pri" aria-label="Primoria screenshots">
+          <figure class="c c1" data-from="-8 70 -6 1.15"><img src="assets/img/pri-home.webp" alt="Primoria home page: say what you want to learn" width="1600" height="1000"></figure>
+          <figure class="c c2" data-from="22 95 7 1.2"><img src="assets/img/pri-lesson.webp" alt="A Primoria lesson explaining self-attention" width="960" height="540"></figure>
+          <figure class="c c3" data-from="-25 120 9 1.25"><img src="assets/img/pri-wave.webp" alt="Interactive wave superposition component" width="960" height="540"></figure>
+          <figure class="c c4" data-from="15 140 -10 1.2"><img src="assets/img/pri-graph.webp" alt="Knowledge graph connecting linear algebra and deep learning concepts" width="960" height="540"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="game" data-theme="ember-dark" data-dwell="1.1" aria-labelledby="game-title">
+      <div class="panel-inner project project-flip">
+        <div class="project-copy">
+          <p class="pre mono"><span>02 / 03</span> Game in development — Godot</p>
+          <h2 class="project-title zh-title" id="game-title"><span class="hl"><span class="zh">诸界余烬</span></span><span class="sub mono">Embers of the Realms</span></h2>
+          <p class="lead" data-lines>A Norse-myth action roguelite I'm building in Godot: Hades-style rooms, gods whose boons slot into your build, and gear drops that change how you play.</p>
+          <ol class="points reveal">
+            <li>Designed the gear system — affixes, set bonuses, and how each drop feeds back into boon choices and combat balance.</li>
+            <li>Built the run loop: rooms, XP and level-up picks, god boons and fusion skills.</li>
+            <li>Art direction across painted card art, snow-temple environments and stylised 3D characters.</li>
+          </ol>
+          <p class="stack mono reveal">Godot · GDScript · Blender · AI-assisted art pipeline</p>
+        </div>
+        <div class="collage collage-game" aria-label="Embers of the Realms screenshots">
+          <figure class="c g1" data-from="10 80 5 1.2"><img src="assets/img/game-title.webp" alt="Title screen of Embers of the Realms" width="1400" height="875"><figcaption class="mono">In-game · title</figcaption></figure>
+          <figure class="c g2" data-from="-20 110 -8 1.25"><img src="assets/img/game-approach.webp" alt="Swordsman approaching a frozen stone courtyard" width="1280" height="720"><figcaption class="mono">In-game · Frozen courtyard</figcaption></figure>
+          <figure class="c g3" data-from="25 130 10 1.2"><img src="assets/img/game-odin.webp" alt="Odin card illustration" width="933" height="1400"><figcaption class="mono">Card art · Odin</figcaption></figure>
+          <figure class="c g4" data-from="-10 150 6 1.25"><img src="assets/img/game-longhouse.webp" alt="Longhouse gate in the snow" width="1280" height="720"><figcaption class="mono">In-game · Longhouse</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="film" data-theme="sepia" data-dwell="1" aria-labelledby="film-title">
+      <div class="panel-inner film">
+        <div class="film-head">
+          <p class="pre mono"><span>03 / 03</span> AI short film — In production</p>
+          <h2 class="project-title zh-title" id="film-title"><span class="hl"><span class="zh">大淖记事</span></span><span class="sub mono">A Tale of Big Nur</span></h2>
+        </div>
+        <div class="film-strip">
+          <figure class="c f1"><img src="assets/img/film-reeds.webp" alt="Reed island in morning mist" width="1400" height="586"></figure>
+          <figure class="c f2"><img src="assets/img/film-yard.webp" alt="A young woman and a tinsmith working in a courtyard" width="1400" height="586"></figure>
+          <figure class="c f3"><img src="assets/img/film-row.webp" alt="A row of tinsmiths seated against a wall" width="1400" height="586"></figure>
+        </div>
+        <div class="film-copy">
+          <p class="lead" data-lines>An adaptation of Wang Zengqi's 1981 novella, made with image and video models: a realistic film look, sparse dialogue, and the original prose as voice-over.</p>
+          <p class="stack mono reveal">Adaptation · storyboard · look development · generation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="more" data-theme="ink" data-dwell="0.6" aria-labelledby="more-title">
+      <div class="panel-inner more">
+        <p class="pre mono" id="more-title">(More work)</p>
+        <ul class="rows" id="rows">
+          <li class="row" data-preview="0"><span class="row-name">Lumina</span><span class="row-what">Vocabulary &amp; IELTS practice app I built for myself</span><span class="row-tag mono">Web · Android</span></li>
+          <li class="row" data-preview="1"><span class="row-name">Conser-vision</span><span class="row-what">Wildlife image classification — augmentation &amp; ensembling</span><span class="row-tag mono">Deep learning · 2026</span></li>
+          <li class="row" data-preview="2"><span class="row-name">Yellow River</span><span class="row-what">Discharge modelling on monitoring data — provincial 3rd prize</span><span class="row-tag mono">CUMCM · Python</span></li>
+          <li class="row" data-preview="3"><span class="row-name">This site</span><span class="row-what">Split-screen scroll engine, written from scratch</span><span class="row-tag mono">HTML · CSS · JS</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="cv" data-theme="paper" data-dwell="0.5" aria-labelledby="cv-title">
+      <div class="panel-inner cv">
+        <div class="cv-head">
+          <h2 class="cv-title" id="cv-title"><span class="hl"><span>Résumé</span></span></h2>
+          <a class="magnet pill reveal" href="assets/cv/Zhang_Fan_Resume.pdf" target="_blank" rel="noopener"><span class="magnet-in">Download CV · PDF ↗</span></a>
+        </div>
+        <div class="cv-cols reveal">
+          <div class="cv-col">
+            <h3 class="mono">Education</h3>
+            <ol>
+              <li><span class="cv-when mono">2025 — 2026</span><b>James Cook University, Singapore</b><span>Bachelor of Information Technology · GPA 6.17 / 7 · JCU Merit Scholarship · coursework completes Dec 2026</span></li>
+              <li><span class="cv-when mono">2022 — 2025</span><b>Fuzhou Melbourne Polytechnic</b><span>Information Technology, Sino-Australian joint programme</span></li>
+            </ol>
+          </div>
+          <div class="cv-col">
+            <h3 class="mono">Experience</h3>
+            <ol>
+              <li><span class="cv-when mono">2027 →</span><b>Looking for an internship</b><span>Full-time, 4+ months, from mid–late January 2027 · AI applications, agents, full-stack &amp; backend</span></li>
+              <li><span class="cv-when mono">Mar — Jul 2025</span><b>Dongguan Yuhang Precision Machinery</b><span>CNC programming intern · generated machining programs from part drawings with CAM software</span></li>
+            </ol>
+          </div>
+          <div class="cv-col">
+            <h3 class="mono">Honours</h3>
+            <ol>
+              <li><span class="cv-when mono">2026</span><b>HackaStone Grand Finalist</b><span>Team Primoria, representing JCU Singapore</span></li>
+              <li><span class="cv-when mono">CUMCM</span><b>Provincial Third Prize</b><span>Mathematical Contest in Modeling · Yellow River discharge (team)</span></li>
+              <li><span class="cv-when mono">Campus</span><b>First Place, C Programming</b><span>Campus programming competition</span></li>
+            </ol>
+          </div>
+        </div>
+        <dl class="cv-skills mono reveal">
+          <div><dt>Programming</dt><dd>Python · TypeScript · C · Git · React · Next.js · PostgreSQL</dd></div>
+          <div><dt>Applied AI</dt><dd>LangGraph · tool calling · RAG · vector retrieval · fastai</dd></div>
+          <div><dt>Games &amp; film</dt><dd>Godot · GDScript · Blender · image &amp; video generation</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="panel" id="contact" data-theme="ember" data-dwell="0" aria-labelledby="contact-title">
+      <div class="panel-inner contact">
+        <h2 class="contact-title" id="contact-title"><span class="hl"><span>Let's build</span></span><span class="hl hl-indent"><span>something.</span></span></h2>
+        <div class="contact-row">
+          <a class="magnet round ink-btn" href="mailto:alanmuskccoder@gmail.com"><span class="magnet-in">Email me ↗</span></a>
+          <div class="contact-main">
+            <a class="contact-mail" href="mailto:alanmuskccoder@gmail.com">alanmuskccoder@gmail.com</a>
+            <ul class="contact-links mono">
+              <li><a href="tel:+6586017391">+65 8601 7391</a></li>
+              <li><a href="https://github.com/ZhangJunQiu-Alan" target="_blank" rel="noopener">GitHub ↗</a></li>
+              <li><a href="https://primoria.app/" target="_blank" rel="noopener">primoria.app ↗</a></li>
+              <li><a href="assets/cv/Zhang_Fan_Resume.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot mono">
+          <span>© 2026 Zhang Fan</span>
+          <span>Singapore · <time id="clock">--:--</time> SGT</span>
+          <a href="#top" data-goto="0">Back to top ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+  <div class="scroller" id="scroller" aria-hidden="true"></div>
+
+  <div class="preview" id="preview" aria-hidden="true">
+    <div class="preview-box"><div class="preview-strip">
+      <div class="preview-item"><img src="assets/img/lumina-home.webp" alt=""></div>
+      <div class="preview-item pv-type pv-green"><span>5-fold<br>ResNet18<br>+ TTA</span></div>
+      <div class="preview-item pv-type pv-sand"><span>Q(t)<br>黄河</span></div>
+      <div class="preview-item pv-type pv-ember"><span>Z<i>—</i>F</span></div>
+    </div></div>
+  </div>
+</body>
+</html>
